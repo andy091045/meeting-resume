@@ -3,7 +3,7 @@
     <div class="nav-container">
       <!-- Logo and Title -->
       <div class="nav-brand">
-        <span class="name">Meeting Hsu</span>
+        <span class="name">WEI-CHE HSU</span>
         <span class="title">Web Developer, Game Developer</span>
       </div>
       <div class="nav-links">

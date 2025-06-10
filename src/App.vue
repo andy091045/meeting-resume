@@ -3,7 +3,7 @@
     <NavBar />
     <router-view />
     <footer class="footer">
-      <p>© 2025 Meeting Hsu. All rights reserved.</p>
+      <p>© 2025 WHE-CHE Hsu. All rights reserved.</p>
     </footer>
   </div>
 </template>

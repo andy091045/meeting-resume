@@ -25,13 +25,13 @@ const contentData = {
       title: "Education",
       items: [
         {
-          period: "2018 - 2022",
-          degree: "Bachelor of Computer Science",
-          institution: "University Name",
-          gpa: "GPA: 3.8/4.0"
+          period: "2021 - 2024",
+          degree: "Master of Computer Science",
+          institution: "National Taipei University of Technology",
+          gpa: "GPA: 3.7/4.0"
         },
         {
-          period: "2016 - 2018",
+          period: "2018 - 2021",
           degree: "Associate Degree in Web Development",
           institution: "College Name"
         }
@@ -43,9 +43,9 @@ const contentData = {
       title: "學歷",
       items: [
         {
-          period: "2018 - 2022",
-          degree: "計算機科學學士",
-          institution: "大學名稱",
+          period: "2021 - 2024",
+          degree: "資訊工程系碩士",
+          institution: "國立臺北科技大學",
           gpa: "GPA: 3.8/4.0"
         },
         {
@@ -61,8 +61,8 @@ const contentData = {
       title: "学歴",
       items: [
         {
-          period: "2018 - 2022",
-          degree: "コンピュータサイエンス学士",
+          period: "2021 - 2024",
+          degree: "国立台北科技大学修士",
           institution: "大学名",
           gpa: "GPA: 3.8/4.0"
         },

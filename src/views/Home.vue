@@ -2,7 +2,8 @@
   <div class="home-container">
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="profile-image"></div>
+      <MyPhoto/>
+      <!-- <div class="profile-image"></div> -->
       <div class="hero-content">
         <h1>{{ content.hero.name }}</h1>
         <h2>{{ content.hero.title }}</h2>
@@ -23,28 +24,29 @@ import EducationComponent from '../components/Education.vue'
 import ExperienceComponent from '../components/Experience.vue'
 import SkillsComponent from '../components/Skills.vue'
 import ContactComponent from '../components/Contact.vue'
+import MyPhoto from '../components/icons/MyPhoto.vue'
 
 // Language data
 const contentData = {
   en: {
     hero: {
-      name: "Your Name",
-      title: "Web Developer",
-      description: "Passionate web developer with a focus on creating intuitive and engaging user experiences."
+      name: "WEI-CHE HSU",
+      title: "Web Developer, Game Developer",
+      description: "A web developer focused on efficiency and user experience, and a passionate game creator at heart."
     },
   },
   zh: {
     hero: {
-      name: "您的名字",
-      title: "網頁開發者",
-      description: "熱情的網頁開發者，專注於創建直觀且引人入勝的用戶體驗。"
+      name: "許瑋哲",
+      title: "網頁開發者, 遊戲開發者",
+      description: "專注於效率與體驗的網頁開發者，同時也是熱情全開的遊戲創作者。"
     }, 
   },
   ja: {
     hero: {
-      name: "あなたの名前",
-      title: "ウェブ開発者",
-      description: "直感的で魅力的なユーザー体験の創造に焦点を当てた情熱的なウェブ開発者。"
+      name: "許瑋哲 (WEI-CHE HSU)",
+      title: "ウェブ開発者、　ゲーム開発者",
+      description: "効率とユーザー体験を重視するWeb開発者であり、情熱を注ぐゲームクリエイターでもあります。"
     },    
   }
 }
@@ -87,14 +89,6 @@ const content = computed(() => {
   padding: 2rem;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: #A89B8C; /* Medium earth tone */
-  border: 3px solid white;
-}
-
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
@@ -109,6 +103,6 @@ const content = computed(() => {
 
 .hero-content p {
   font-size: 1.1rem;
-  max-width: 600px;
+  max-width: 1000px;
 }
 </style>

@@ -9,7 +9,16 @@
         <p><strong>{{ content.contact.location.label }}:</strong> {{ content.contact.location.value }}</p>
       </div>
       <div class="social-links">
-        <a href="#" class="social-link" v-for="(link, index) in content.contact.socialLinks" :key="'social-'+index">{{ link }}</a>
+        <a
+          v-for="(link, index) in content.contact.socialLinks"
+          :key="'social-' + index"
+          :href="link.url"
+          class="social-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {{ link.name }}
+        </a>
       </div>
     </div>
   </section>
@@ -25,17 +34,20 @@ const contentData = {
       title: "Contact",
       email: {
         label: "Email",
-        value: "your.email@example.com"
+        value: "andy091045@gmail.com"
       },
       phone: {
         label: "Phone",
-        value: "(123) 456-7890"
+        value: "(886) 0910-410-484"
       },
       location: {
         label: "Location",
-        value: "City, Country"
+        value: "New Taipei City, Taiwan (R.O.C.)"
       },
-      socialLinks: ["LinkedIn", "GitHub", "Twitter"]
+      socialLinks: [
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/andy091045/" },
+        { name: "GitHub", url: "https://github.com/andy091045" }
+      ]
     }
   },
   zh: {
@@ -43,17 +55,20 @@ const contentData = {
       title: "聯絡方式",
       email: {
         label: "電子郵件",
-        value: "your.email@example.com"
+        value: "andy091045@gmail.com"
       },
       phone: {
         label: "電話",
-        value: "(123) 456-7890"
+        value: "(886) 0910-410-484"
       },
       location: {
         label: "位置",
-        value: "城市, 國家"
+        value: "新北市, 台灣"
       },
-      socialLinks: ["LinkedIn", "GitHub", "Twitter"]
+      socialLinks: [
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/andy091045/" },
+        { name: "GitHub", url: "https://github.com/andy091045" }
+      ]
     }
   },
   ja: {
@@ -61,17 +76,20 @@ const contentData = {
       title: "連絡先",
       email: {
         label: "メール",
-        value: "your.email@example.com"
+        value: "andy091045@gmail.com"
       },
       phone: {
         label: "電話",
-        value: "(123) 456-7890"
+        value: "(886) 0910-410-484"
       },
       location: {
         label: "所在地",
-        value: "都市, 国"
+        value: "新北, 台湾"
       },
-      socialLinks: ["LinkedIn", "GitHub", "Twitter"]
+      socialLinks: [
+        { name: "LinkedIn", url: "https://www.linkedin.com/in/andy091045/" },
+        { name: "GitHub", url: "https://github.com/andy091045" }
+      ]
     }
   }
 }
@@ -143,13 +161,20 @@ const content = computed(() => {
 }
 
 .social-link {
-  background-color: #7D8C75; /* Grey-Green color */
+  background-color: #7D8C75;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  display: inline-flex;        /* 讓內容水平置中 */
+  align-items: center;         /* 垂直置中 */
+  justify-content: center;
+  line-height: 1;              /* 避免多餘行高 */
+  height: auto;                /* 防止外層撐高 */
+  font-size: 1rem;
 }
+
 
 .social-link:hover {
   background-color: #6b7a64; /* Darker Grey-Green */
