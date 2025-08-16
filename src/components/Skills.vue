@@ -1,14 +1,15 @@
 <template>
   <!-- Skills Section -->
   <section class="section">
-    <SkillsComponent/>
+    <SkillsComponent />
     <h2 class="section-title">{{ content.skills.title }}</h2>
     <div class="section-divider"></div>
     <div class="skills-container">
-      <div class="skill-category" v-for="(category, index) in content.skills.categories" :key="'skill-'+index">
+      <div class="skill-category" v-for="(category, index) in content.skills.categories" :key="'skill-' + index">
         <h3>{{ category.name }}</h3>
         <div class="skills-tags">
-          <span class="skill-tag" v-for="(skill, skillIndex) in category.skills" :key="'tag-'+skillIndex">{{ skill }}</span>
+          <span class="skill-tag" v-for="(skill, skillIndex) in category.skills" :key="'tag-' + skillIndex">{{ skill
+          }}</span>
         </div>
       </div>
     </div>
@@ -16,7 +17,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted} from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 // Language data
 const contentData = {
@@ -25,16 +26,20 @@ const contentData = {
       title: "Skills",
       categories: [
         {
-          name: "Frontend",
-          skills: ["HTML5", "CSS3", "JavaScript", "Vue.js", "React", "Tailwind CSS"]
+          name: "Frontend Development",
+          skills: ["HTML", "CSS", "JavaScript", "Vue.js"]
         },
         {
-          name: "Backend",
-          skills: ["Node.js", "Express", "MongoDB", "Firebase"]
+          name: "Backend Development",
+          skills: ["Node.js", "Python", "Django", "Firebase"]
         },
         {
-          name: "Tools",
-          skills: ["Git", "Webpack", "Figma", "VS Code"]
+          name: "Game Development",
+          skills: ["C#", "Unity", "App Deployment", "Firebase"]
+        },
+        {
+          name: "Tools & Platforms",
+          skills: ["Git", "VS Code", "Visual Studio", "RPA System"]
         }
       ]
     }
@@ -44,38 +49,46 @@ const contentData = {
       title: "技能",
       categories: [
         {
-          name: "前端",
-          skills: ["HTML5", "CSS3", "JavaScript", "Vue.js", "React", "Tailwind CSS"]
+          name: "網頁前端",
+          skills: ["HTML", "CSS", "JavaScript", "Vue.js"]
         },
         {
-          name: "後端",
-          skills: ["Node.js", "Express", "MongoDB", "Firebase"]
+          name: "網頁後端",
+          skills: ["Node.js", "Python", "Django", "Firebase"]
         },
         {
-          name: "工具",
-          skills: ["Git", "Webpack", "Figma", "VS Code"]
+          name: "遊戲開發",
+          skills: ["C#", "Unity", "App 上架", "Firebase"]
+        },
+        {
+          name: "工具與平台",
+          skills: ["Git", "VS Code", "Visual Studio", "RPA 系統"]
         }
       ]
-    },
+    }
   },
   ja: {
     skills: {
       title: "スキル",
       categories: [
         {
-          name: "フロントエンド",
-          skills: ["HTML5", "CSS3", "JavaScript", "Vue.js", "React", "Tailwind CSS"]
+          name: "フロントエンド開発",
+          skills: ["HTML", "CSS", "JavaScript", "Vue.js"]
         },
         {
-          name: "バックエンド",
-          skills: ["Node.js", "Express", "MongoDB", "Firebase"]
+          name: "バックエンド開発",
+          skills: ["Node.js", "Python", "Django", "Firebase"]
         },
         {
-          name: "ツール",
-          skills: ["Git", "Webpack", "Figma", "VS Code"]
+          name: "ゲーム開発",
+          skills: ["C#", "Unity", "アプリ公開", "Firebase"]
+        },
+        {
+          name: "ツール・プラットフォーム",
+          skills: ["Git", "VS Code", "Visual Studio", "RPAシステム"]
         }
       ]
-    },
+    }
   }
 }
 
@@ -119,7 +132,8 @@ const content = computed(() => {
 .section-divider {
   height: 3px;
   width: 80px;
-  background-color: #7D8C75; /* Grey-Green color */
+  background-color: #7D8C75;
+  /* Grey-Green color */
   margin-bottom: 1.5rem;
 }
 
@@ -132,7 +146,8 @@ const content = computed(() => {
 
 .skill-category h3 {
   margin-bottom: 1rem;
-  color: #7D8C75; /* Grey-Green color */
+  color: #7D8C75;
+  /* Grey-Green color */
 }
 
 .skills-tags {
@@ -142,12 +157,12 @@ const content = computed(() => {
 }
 
 .skill-tag {
-  background-color: #A89B8C; /* Medium earth tone */
+  background-color: #A89B8C;
+  /* Medium earth tone */
   color: white;
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   font-size: 0.9rem;
   display: inline-block;
 }
-
 </style>

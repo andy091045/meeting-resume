@@ -1,22 +1,22 @@
 <template>
-    <!-- Education Section -->
-    <section class="section">
-      <EducationComponent/>
-      <h2 class="section-title">{{ content.education.title }}</h2>
-      <div class="section-divider"></div>
-      <div class="education-card" v-for="(item, index) in content.education.items" :key="'edu-'+index">
-        <div class="education-period">{{ item.period }}</div>
-        <div class="education-details">
-          <h3>{{ item.degree }}</h3>
-          <p>{{ item.institution }}</p>
-          <p v-if="item.gpa">{{ item.gpa }}</p>
-        </div>
+  <!-- Education Section -->
+  <section class="section">
+    <EducationComponent />
+    <h2 class="section-title">{{ content.education.title }}</h2>
+    <div class="section-divider"></div>
+    <div class="education-card" v-for="(item, index) in content.education.items" :key="'edu-' + index">
+      <div class="education-period">{{ item.period }}</div>
+      <div class="education-details">
+        <h3>{{ item.degree }}</h3>
+        <p>{{ item.institution }}</p>
+        <p v-if="item.gpa">{{ item.gpa }}</p>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import { ref, computed, onMounted} from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 // Language data
 const contentData = {
@@ -32,8 +32,8 @@ const contentData = {
         },
         {
           period: "2018 - 2021",
-          degree: "Associate Degree in Web Development",
-          institution: "College Name"
+          degree: "Bachelor of Digital Design and Technology",
+          institution: "National Taipei University of Education"
         }
       ]
     },
@@ -49,9 +49,9 @@ const contentData = {
           gpa: "GPA: 3.8/4.0"
         },
         {
-          period: "2016 - 2018",
-          degree: "網頁開發副學士",
-          institution: "學院名稱"
+          period: "2018 - 2021",
+          degree: "數位設計科技學系學士",
+          institution: "國立臺北教育大學"
         }
       ]
     },
@@ -61,18 +61,18 @@ const contentData = {
       title: "学歴",
       items: [
         {
-          period: "2021 - 2024",
-          degree: "国立台北科技大学修士",
-          institution: "大学名",
-          gpa: "GPA: 3.8/4.0"
+          period: "2021年 ～ 2024年",
+          degree: "コンピューターサイエンス・情報工学 修士",
+          institution: "国立台北科技大学",
+          gpa: "GPA：3.8 / 4.0"
         },
         {
-          period: "2016 - 2018",
-          degree: "ウェブ開発準学士",
-          institution: "カレッジ名"
+          period: "2018年 ～ 2021年",
+          degree: "デジタルデザイン技術学科 学士",
+          institution: "国立台北教育大学"
         }
       ]
-    },
+    }
   }
 }
 
@@ -99,7 +99,6 @@ const content = computed(() => {
 </script>
 
 <style scoped>
-
 .section {
   background-color: white;
   border-radius: 8px;
@@ -117,7 +116,8 @@ const content = computed(() => {
 .section-divider {
   height: 3px;
   width: 80px;
-  background-color: #7D8C75; /* Grey-Green color */
+  background-color: #7D8C75;
+  /* Grey-Green color */
   margin-bottom: 1.5rem;
 }
 
@@ -138,7 +138,8 @@ const content = computed(() => {
 .education-period {
   flex: 0 0 120px;
   font-weight: bold;
-  color: #7D8C75; /* Grey-Green color */
+  color: #7D8C75;
+  /* Grey-Green color */
 }
 
 .education-details h3 {

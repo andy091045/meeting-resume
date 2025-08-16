@@ -45,6 +45,7 @@ onMounted(() => {
 // Change language and store in sessionStorage
 const changeLanguage = () => {
   sessionStorage.setItem('language', currentLanguage.value)
+  window.dispatchEvent(new CustomEvent('language-changed', { detail: currentLanguage.value }))
 }
 
 // Make currentLanguage available to the parent component

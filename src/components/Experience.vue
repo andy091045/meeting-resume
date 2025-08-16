@@ -1,24 +1,24 @@
 <template>
   <!-- Experience Section -->
   <section class="section">
-      <ExperienceComponent/>
-      <h2 class="section-title">{{ content.experience.title }}</h2>
-      <div class="section-divider"></div>
-      <div class="experience-card" v-for="(item, index) in content.experience.items" :key="'exp-'+index">
-        <div class="experience-period">{{ item.period }}</div>
-        <div class="experience-details">
-          <h3>{{ item.position }}</h3>
-          <p class="company">{{ item.company }}</p>
-          <ul class="responsibilities">
-            <li v-for="(duty, dutyIndex) in item.responsibilities" :key="'duty-'+dutyIndex">{{ duty }}</li>
-          </ul>
-        </div>
+    <ExperienceComponent />
+    <h2 class="section-title">{{ content.experience.title }}</h2>
+    <div class="section-divider"></div>
+    <div class="experience-card" v-for="(item, index) in content.experience.items" :key="'exp-' + index">
+      <div class="experience-period">{{ item.period }}</div>
+      <div class="experience-details">
+        <h3>{{ item.position }}</h3>
+        <p class="company">{{ item.company }}</p>
+        <ul class="responsibilities">
+          <li v-for="(duty, dutyIndex) in item.responsibilities" :key="'duty-' + dutyIndex">{{ duty }}</li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import { ref, computed, onMounted} from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 // Language data
 const contentData = {
@@ -27,23 +27,26 @@ const contentData = {
       title: "Experience",
       items: [
         {
-          period: "2022 - Present",
-          position: "Front-End Developer",
-          company: "Tech Company Inc.",
+          period: "2024 - Present",
+          position: "Full-Stack Web Developer",
+          company: "Compal Electronics, Inc.",
           responsibilities: [
-            "Developed responsive web applications using Vue.js and Tailwind CSS",
-            "Collaborated with UX team to implement design systems",
-            "Improved website performance by 40% through code optimization"
+            "Developed interactive frontend applications using Vue.js",
+            "Built backend APIs with Python Django and integrated MySQL databases",
+            "Collaborated with cross-functional teams to build internal IT systems",
+            "Developed internal tools to improve laptop testing efficiency",
+            "Optimized code to improve website loading speed by 30%"
           ]
         },
         {
-          period: "2020 - 2022",
-          position: "Web Development Intern",
-          company: "Startup Studio",
+          period: "2023 - 2023",
+          position: "Game Development Intern",
+          company: "TOYDEA",
           responsibilities: [
-            "Assisted in developing website components using HTML, CSS, and JavaScript",
-            "Contributed to the company's open-source projects",
-            "Participated in weekly code reviews and learning sessions"
+            "Designed and developed prototypes for various game types",
+            "Contributed to the development of subsystems in large-scale projects",
+            "Participated in weekly code reviews and received mentorship from senior developers",
+            "Managed and prioritized game data structures"
           ]
         }
       ]
@@ -54,54 +57,60 @@ const contentData = {
       title: "工作經驗",
       items: [
         {
-          period: "2022 - 至今",
-          position: "前端開發者",
-          company: "科技公司",
+          period: "2024 - 至今",
+          position: "全端網頁工程師",
+          company: "仁寶電腦工業股份有限公司",
           responsibilities: [
-            "使用Vue.js和Tailwind CSS開發響應式網頁應用",
-            "與UX團隊合作實施設計系統",
-            "通過代碼優化提高網站性能40%"
+            "使用 Vue.js 開發互動式前端應用程式",
+            "以 Python Django 開發後端 API，並串接 MySQL 資料庫",
+            "跨部門合作建置公司內部 IT 系統",
+            "開發提升筆電測試效率的內部工具",
+            "透過程式碼優化，提升網站載入速度達 30%"
           ]
         },
         {
-          period: "2020 - 2022",
-          position: "網頁開發實習生",
-          company: "新創工作室",
+          period: "2023 - 2023",
+          position: "遊戲程式開發實習生",
+          company: "TOYDEA",
           responsibilities: [
-            "協助使用HTML、CSS和JavaScript開發網站組件",
-            "為公司的開源項目做出貢獻",
-            "參與每週代碼審查和學習課程"
+            "設計並開發不同類型的遊戲原型",
+            "協助大型專案中特定系統模組的開發",
+            "參與每週程式碼審查並接受資深工程師指導",
+            "處理遊戲資料的優先級排序與結構優化"
           ]
         }
       ]
-    },
+    }
   },
   ja: {
     experience: {
-      title: "職歴",
+      title: "職務経歴",
       items: [
         {
-          period: "2022 - 現在",
-          position: "フロントエンド開発者",
-          company: "テック企業株式会社",
+          period: "2024年 ～ 現在",
+          position: "フルスタックWebエンジニア",
+          company: "コンパル電子株式会社",
           responsibilities: [
-            "Vue.jsとTailwind CSSを使用した応答性の高いウェブアプリケーションを開発",
-            "UXチームと協力してデザインシステムを実装",
-            "コード最適化によりウェブサイトのパフォーマンスを40％向上"
+            "Vue.jsを用いたインタラクティブなフロントエンドアプリを開発",
+            "Python DjangoでバックエンドAPIを構築し、MySQLと連携",
+            "部署横断のチームと協力し、社内ITシステムを構築",
+            "ノートパソコンのテスト効率を向上させる社内ツールを開発",
+            "コード最適化により、Webサイトの読み込み速度を30％向上"
           ]
         },
         {
-          period: "2020 - 2022",
-          position: "ウェブ開発インターン",
-          company: "スタートアップスタジオ",
+          period: "2023年",
+          position: "ゲーム開発インターン",
+          company: "TOYDEA",
           responsibilities: [
-            "HTML、CSS、JavaScriptを使用したウェブサイトコンポーネントの開発を支援",
-            "会社のオープンソースプロジェクトに貢献",
-            "週次のコードレビューと学習セッションに参加"
+            "さまざまなジャンルのゲームプロトタイプを設計・開発",
+            "大型プロジェクトの一部システム開発に貢献",
+            "毎週のコードレビューに参加し、先輩エンジニアから指導を受ける",
+            "ゲーム内データの優先順位を管理・最適化"
           ]
         }
       ]
-    },
+    }
   }
 }
 
@@ -145,7 +154,8 @@ const content = computed(() => {
 .section-divider {
   height: 3px;
   width: 80px;
-  background-color: #7D8C75; /* Grey-Green color */
+  background-color: #7D8C75;
+  /* Grey-Green color */
   margin-bottom: 1.5rem;
 }
 
@@ -167,7 +177,8 @@ const content = computed(() => {
 .experience-period {
   flex: 0 0 120px;
   font-weight: bold;
-  color: #7D8C75; /* Grey-Green color */
+  color: #7D8C75;
+  /* Grey-Green color */
 }
 
 .experience-details h3 {
@@ -189,5 +200,4 @@ const content = computed(() => {
 .responsibilities li {
   margin-bottom: 0.5rem;
 }
-
 </style>

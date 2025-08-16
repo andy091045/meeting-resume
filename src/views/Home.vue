@@ -32,21 +32,21 @@ const contentData = {
     hero: {
       name: "WEI-CHE HSU",
       title: "Web Developer, Game Developer",
-      description: "A web developer focused on efficiency and user experience, and a passionate game creator at heart."
+      description: "A web developer focused on functionality and user experience, and also a passionate game creator."
     },
   },
   zh: {
     hero: {
       name: "許瑋哲",
       title: "網頁開發者, 遊戲開發者",
-      description: "專注於效率與體驗的網頁開發者，同時也是熱情全開的遊戲創作者。"
+      description: "專注於功能與體驗的網頁開發者，同時也是熱情的遊戲創作者。"
     }, 
   },
   ja: {
     hero: {
       name: "許瑋哲 (WEI-CHE HSU)",
       title: "ウェブ開発者、　ゲーム開発者",
-      description: "効率とユーザー体験を重視するWeb開発者であり、情熱を注ぐゲームクリエイターでもあります。"
+      description: "機能性とユーザー体験に重点を置いたWeb開発者であり、情熱的なゲームクリエイターでもあります。"
     },    
   }
 }
