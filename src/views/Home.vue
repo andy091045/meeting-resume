@@ -10,9 +10,9 @@
         <p>{{ content.hero.description }}</p>
       </div>
     </section>
-
-    <EducationComponent/>
+    
     <ExperienceComponent/>
+    <EducationComponent/>
     <SkillsComponent/>
     <ContactComponent/>    
   </div>
@@ -31,22 +31,22 @@ const contentData = {
   en: {
     hero: {
       name: "WEI-CHE HSU",
-      title: "Web Developer, Game Developer",
-      description: "A web developer focused on functionality and user experience, and also a passionate game creator."
+      title: "Creative Technologist & Systems Architect",
+      description: "Specializing in Automation, AI Agents, Full-Stack Web and Game Dev."
     },
   },
   zh: {
     hero: {
       name: "許瑋哲",
-      title: "網頁開發者, 遊戲開發者",
-      description: "專注於功能與體驗的網頁開發者，同時也是熱情的遊戲創作者。"
+      title: "多技術工程師 & 系統架構師",
+      description: "專精於自動化、AI 代理應用、全端網頁與遊戲開發。"
     }, 
   },
   ja: {
     hero: {
       name: "許瑋哲 (WEI-CHE HSU)",
-      title: "ウェブ開発者、　ゲーム開発者",
-      description: "機能性とユーザー体験に重点を置いたWeb開発者であり、情熱的なゲームクリエイターでもあります。"
+      title: "クリエイティブ・テクノロジスト & システムアーキテクト",
+      description: "自動化、AIエージェント、フルスタックWeb、ゲーム開発を専門としています。"
     },    
   }
 }

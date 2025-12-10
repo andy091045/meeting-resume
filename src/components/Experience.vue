@@ -28,14 +28,17 @@ const contentData = {
       items: [
         {
           period: "2024 - Present",
-          position: "Full-Stack Web Developer",
+          position: "Software Engineer",
           company: "Compal Electronics, Inc.",
           responsibilities: [
+            "Implemented automated web data extraction and report generation with integrated chart visualization, and delivered scheduled summary emails",
+            "Built a mail-agent system enabling AI-driven automated email composition and dispatch",
+            "Developed a visual dashboard for port usage, along with port management tools and one-click server startup for the entire web system",
             "Developed interactive frontend applications using Vue.js",
             "Built backend APIs with Python Django and integrated MySQL databases",
             "Collaborated with cross-functional teams to build internal IT systems",
             "Developed internal tools to improve laptop testing efficiency",
-            "Optimized code to improve website loading speed by 30%"
+            "Optimized code to improve website loading speed by 30%",            
           ]
         },
         {
@@ -52,20 +55,24 @@ const contentData = {
       ]
     }
   },
+
   zh: {
     experience: {
       title: "工作經驗",
       items: [
         {
           period: "2024 - 至今",
-          position: "全端網頁工程師",
+          position: "軟體工程師",
           company: "仁寶電腦工業股份有限公司",
           responsibilities: [
-            "使用 Vue.js 開發互動式前端應用程式",
+            "開發自動化網頁資料抓取工具，整合圖表並生成報表，自動寄送定期統整信件",
+            "建置 Mail Agent 系統，使 AI 能夠自動產生信件內容並完成寄送流程",
+            "打造 Port 使用狀況可視化介面，並提供 Port 管理與一鍵啟動全站伺服器等功能",
+            "使用 Vue.js 開發互動式前端網站",
             "以 Python Django 開發後端 API，並串接 MySQL 資料庫",
             "跨部門合作建置公司內部 IT 系統",
             "開發提升筆電測試效率的內部工具",
-            "透過程式碼優化，提升網站載入速度達 30%"
+            "透過程式碼優化，提升網站載入速度達 30%",
           ]
         },
         {
@@ -82,20 +89,24 @@ const contentData = {
       ]
     }
   },
+
   ja: {
     experience: {
       title: "職務経歴",
       items: [
         {
           period: "2024年 ～ 現在",
-          position: "フルスタックWebエンジニア",
+          position: "ソフトウェアエンジニア",
           company: "コンパル電子株式会社",
           responsibilities: [
+            "Webデータの自動収集・分析基盤を構築し、チャート化したレポートを自動生成・定期メールで配信",
+            "AIが自動でメール文面を生成し送信できるMail Agentシステムを構築",
+            "Port の使用状況を可視化するダッシュボードを構築し、Port 管理機能や Web システム全体をワンクリックで起動できる機能を実装",
             "Vue.jsを用いたインタラクティブなフロントエンドアプリを開発",
             "Python DjangoでバックエンドAPIを構築し、MySQLと連携",
             "部署横断のチームと協力し、社内ITシステムを構築",
             "ノートパソコンのテスト効率を向上させる社内ツールを開発",
-            "コード最適化により、Webサイトの読み込み速度を30％向上"
+            "コード最適化により、Webサイトの読み込み速度を30％向上",            
           ]
         },
         {
@@ -113,6 +124,7 @@ const contentData = {
     }
   }
 }
+
 
 // Get language from sessionStorage and set default
 const language = ref('en')

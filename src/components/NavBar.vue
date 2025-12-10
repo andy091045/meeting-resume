@@ -4,7 +4,7 @@
       <!-- Logo and Title -->
       <div class="nav-brand">
         <span class="name">WEI-CHE HSU</span>
-        <span class="title">Web Developer, Game Developer</span>
+        <span class="title">Creative Technologist & Systems Architect</span>
       </div>
       <div class="nav-links">
         <router-link to="/meeting-resume" class="nav-link">
@@ -13,12 +13,12 @@
             currentLanguage === 'zh' ? '首頁' : 'ホーム'
           }}
         </router-link>
-        <router-link to="/portfolio" class="nav-link">
+        <!-- <router-link to="/portfolio" class="nav-link">
           {{ 
             currentLanguage === 'en' ? 'Portfolio' : 
             currentLanguage === 'zh' ? '作品集' : 'ポートフォリオ'
           }}
-        </router-link>
+        </router-link> -->
         <div class="language-select">
           <select v-model="currentLanguage" @change="changeLanguage" class="language-dropdown">
             <option value="en">English</option>

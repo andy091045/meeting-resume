@@ -31,7 +31,7 @@ const contentData = {
         },
         {
           name: "Backend Development",
-          skills: ["Node.js", "Python", "Django", "Firebase"]
+          skills: ["Python", "Django", "MYSQL"]
         },
         {
           name: "Game Development",
@@ -39,7 +39,7 @@ const contentData = {
         },
         {
           name: "Tools & Platforms",
-          skills: ["Git", "VS Code", "Visual Studio", "RPA System"]
+          skills: ["Git", "VS Code", "AutoGen", "RPA System"]
         }
       ]
     }
@@ -54,7 +54,7 @@ const contentData = {
         },
         {
           name: "網頁後端",
-          skills: ["Node.js", "Python", "Django", "Firebase"]
+          skills: ["Python", "Django", "MYSQL"]
         },
         {
           name: "遊戲開發",
@@ -62,7 +62,7 @@ const contentData = {
         },
         {
           name: "工具與平台",
-          skills: ["Git", "VS Code", "Visual Studio", "RPA 系統"]
+          skills: ["Git", "VS Code", "AutoGen", "RPA 系統"]
         }
       ]
     }
@@ -77,7 +77,7 @@ const contentData = {
         },
         {
           name: "バックエンド開発",
-          skills: ["Node.js", "Python", "Django", "Firebase"]
+          skills: ["Python", "Django", "MYSQL"]
         },
         {
           name: "ゲーム開発",
@@ -85,7 +85,7 @@ const contentData = {
         },
         {
           name: "ツール・プラットフォーム",
-          skills: ["Git", "VS Code", "Visual Studio", "RPAシステム"]
+          skills: ["Git", "VS Code", "AutoGen", "RPAシステム"]
         }
       ]
     }
