@@ -4,11 +4,7 @@
     <p>{{ content.description }}</p>
 
     <div class="projects-grid">
-      <div
-        v-for="(project, index) in paginatedProjects"
-        :key="index"
-        class="project-card"
-      >
+      <div v-for="(project, index) in paginatedProjects" :key="index" class="project-card">
         <h3>{{ project.title }}</h3>
         <p>{{ project.preview }}</p>
         <button @click="goDetail(project.title)">View Detail</button>
@@ -17,12 +13,8 @@
 
     <!-- Pagination -->
     <div class="pagination">
-      <button
-        v-for="page in totalPages"
-        :key="page"
-        @click="currentPage = page"
-        :class="{ active: currentPage === page }"
-      >
+      <button v-for="page in totalPages" :key="page" @click="currentPage = page"
+        :class="{ active: currentPage === page }">
         {{ page }}
       </button>
     </div>
@@ -62,7 +54,7 @@ const loadProjects = async () => {
 onMounted(loadProjects)
 
 // 分頁
-const itemsPerPage = 2
+const itemsPerPage = 30
 const currentPage = ref(1)
 const totalPages = computed(() => Math.ceil(allProjects.value.length / itemsPerPage))
 const paginatedProjects = computed(() =>
@@ -84,8 +76,9 @@ const goDetail = (projectTitle) => {
   color: #4A4A4A;
 }
 
-.portfolio-container > * {
-  margin-bottom: 2rem; /* 元素之間的距離 */
+.portfolio-container>* {
+  margin-bottom: 2rem;
+  /* 元素之間的距離 */
 }
 
 .projects-grid {
@@ -93,14 +86,17 @@ const goDetail = (projectTitle) => {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1rem;
 }
+
 .project-card {
   padding: 1rem;
   border: 1px solid #ccc;
   background-color: #fff;
 }
+
 .project-card h3 {
   margin-bottom: 0.5rem;
 }
+
 .project-card button {
   padding: 0.5rem 1rem;
   background-color: #7D8C75;
@@ -108,10 +104,12 @@ const goDetail = (projectTitle) => {
   border: none;
   cursor: pointer;
 }
+
 .pagination {
   margin-top: 2rem;
   text-align: center;
 }
+
 .pagination button {
   margin: 0 0.3rem;
   padding: 0.5rem 1rem;
@@ -120,6 +118,7 @@ const goDetail = (projectTitle) => {
   color: white;
   cursor: pointer;
 }
+
 .pagination button.active {
   background-color: #4A4A4A;
 }

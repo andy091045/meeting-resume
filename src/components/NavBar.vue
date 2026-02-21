@@ -8,17 +8,17 @@
       </div>
       <div class="nav-links">
         <router-link to="/meeting-resume" class="nav-link">
-          {{ 
-            currentLanguage === 'en' ? 'Home' : 
-            currentLanguage === 'zh' ? '首頁' : 'ホーム'
+          {{
+            currentLanguage === 'en' ? 'Home' :
+              currentLanguage === 'zh' ? '首頁' : 'ホーム'
           }}
         </router-link>
-        <!-- <router-link to="/portfolio" class="nav-link">
-          {{ 
-            currentLanguage === 'en' ? 'Portfolio' : 
-            currentLanguage === 'zh' ? '作品集' : 'ポートフォリオ'
+        <router-link to="/portfolio" class="nav-link">
+          {{
+            currentLanguage === 'en' ? 'Portfolio' :
+              currentLanguage === 'zh' ? '作品集' : 'ポートフォリオ'
           }}
-        </router-link> -->
+        </router-link>
         <div class="language-select">
           <select v-model="currentLanguage" @change="changeLanguage" class="language-dropdown">
             <option value="en">English</option>
@@ -26,11 +26,11 @@
             <option value="ja">日本語</option>
           </select>
         </div>
-      </div>     
+      </div>
     </div>
   </nav>
 </template>
-  
+
 <script setup>
 import { ref, onMounted } from 'vue'
 
@@ -54,7 +54,8 @@ defineExpose({ currentLanguage })
 
 <style scoped>
 .navbar {
-  background-color: #7D8C75; /* Grey-Green color */
+  background-color: #7D8C75;
+  /* Grey-Green color */
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -134,7 +135,8 @@ defineExpose({ currentLanguage })
 }
 
 .language-dropdown {
-  background-color: #A89B8C; /* Medium earth tone */
+  background-color: #A89B8C;
+  /* Medium earth tone */
   color: white;
   border: none;
   padding: 0.5rem;

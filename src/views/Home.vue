@@ -2,7 +2,7 @@
   <div class="home-container">
     <!-- Hero Section -->
     <section class="hero-section">
-      <MyPhoto/>
+      <MyPhoto />
       <!-- <div class="profile-image"></div> -->
       <div class="hero-content">
         <h1>{{ content.hero.name }}</h1>
@@ -10,11 +10,11 @@
         <p>{{ content.hero.description }}</p>
       </div>
     </section>
-    
-    <ExperienceComponent/>
-    <EducationComponent/>
-    <SkillsComponent/>
-    <ContactComponent/>    
+
+    <ExperienceComponent />
+    <EducationComponent />
+    <SkillsComponent />
+    <ContactComponent />
   </div>
 </template>
 
@@ -40,14 +40,14 @@ const contentData = {
       name: "許瑋哲",
       title: "多技術工程師 & 系統架構師",
       description: "專精於自動化、AI 代理應用、全端網頁與遊戲開發。"
-    }, 
+    },
   },
   ja: {
     hero: {
       name: "許瑋哲 (WEI-CHE HSU)",
       title: "クリエイティブ・テクノロジスト & システムアーキテクト",
       description: "自動化、AIエージェント、フルスタックWeb、ゲーム開発を専門としています。"
-    },    
+    },
   }
 }
 
@@ -75,8 +75,10 @@ const content = computed(() => {
 
 <style scoped>
 .home-container {
-  background-color: #E6D2B5; /* Light coffee background */
-  color: #4A4A4A; /* Dark grey text */
+  background-color: #E6D2B5;
+  /* Light coffee background */
+  color: #4A4A4A;
+  /* Dark grey text */
   min-height: 100vh;
   padding: 2rem;
 }
@@ -98,7 +100,8 @@ const content = computed(() => {
 .hero-content h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #7D8C75; /* Grey-Green color */
+  color: #7D8C75;
+  /* Grey-Green color */
 }
 
 .hero-content p {
