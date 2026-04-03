@@ -34,12 +34,16 @@ const contentData = {
           skills: ["Python", "Django", "MYSQL"]
         },
         {
-          name: "Game Development",
-          skills: ["C#", "Unity", "App Deployment", "Firebase"]
+          name: "AI ref",
+          skills: ["AI Agent framework:Autogen", "model platform:Ollama, VLLM, Xinference", "RAG", "Context Engineering"]
         },
         {
-          name: "Tools & Platforms",
-          skills: ["Git", "VS Code", "AutoGen", "RPA System"]
+          name: "Tool",
+          skills: ["Git", "Docker", "antigravity vibe coding", "RPA system"]
+        },
+        {
+          name: "Game Development",
+          skills: ["C#", "Unity", "App Deployment", "Firebase"]
         }
       ]
     }
@@ -57,12 +61,16 @@ const contentData = {
           skills: ["Python", "Django", "MYSQL"]
         },
         {
-          name: "遊戲開發",
-          skills: ["C#", "Unity", "App 上架", "Firebase"]
+          name: "AI相關",
+          skills: ["AI Agent框架:Autogen", "模型架設:Ollama, VLLM, Xinference", "RAG", "Context Engineering"]
         },
         {
-          name: "工具與平台",
-          skills: ["Git", "VS Code", "AutoGen", "RPA 系統"]
+          name: "工具",
+          skills: ["Git", "Docker", "antigravity vibe coding", "RPA 系統"]
+        },
+        {
+          name: "遊戲開發",
+          skills: ["C#", "Unity", "App 上架", "Firebase"]
         }
       ]
     }
@@ -80,12 +88,16 @@ const contentData = {
           skills: ["Python", "Django", "MYSQL"]
         },
         {
-          name: "ゲーム開発",
-          skills: ["C#", "Unity", "アプリ公開", "Firebase"]
+          name: "AI関連",
+          skills: ["AIエージェントフレームワーク: AutoGen", "モデル構築: Ollama, vLLM, Xinference", "RAG", "コンテキストエンジニアリング"]
         },
         {
-          name: "ツール・プラットフォーム",
-          skills: ["Git", "VS Code", "AutoGen", "RPAシステム"]
+          name: "ツール",
+          skills: ["Git", "Docker", "antigravity vibe coding", "RPAシステム"]
+        },
+        {
+          name: "ゲーム開発",
+          skills: ["C#", "Unity", "アプリリリース", "Firebase"]
         }
       ]
     }

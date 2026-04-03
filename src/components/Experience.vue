@@ -31,14 +31,13 @@ const contentData = {
           position: "Software Engineer",
           company: "Compal Electronics, Inc.",
           responsibilities: [
-            "Implemented automated web data extraction and report generation with integrated chart visualization, and delivered scheduled summary emails",
-            "Built a mail-agent system enabling AI-driven automated email composition and dispatch",
-            "Developed a visual dashboard for port usage, along with port management tools and one-click server startup for the entire web system",
-            "Developed interactive frontend applications using Vue.js",
-            "Built backend APIs with Python Django and integrated MySQL databases",
-            "Collaborated with cross-functional teams to build internal IT systems",
-            "Developed internal tools to improve laptop testing efficiency",
-            "Optimized code to improve website loading speed by 30%",            
+            "Responsible for building a RAG system, researching suitable embedding models, and rapidly deploying a RAG architecture within two months using the RAGFlow framework, packaged as a Docker image.",
+            "Developed AI Agent projects, contributing to the construction of an AI Agent framework (AutoGen) and implementing several agents (Mail Agent, Remote Tool Agent, RAG Agent).",
+            "Developed four web applications for internal teams, including two AI chatbot systems and two data management systems.",
+            "Maintained three web applications, upgrading frameworks (Vue 2 → Vue 3) and refactoring code for optimization.",
+            "Built a port usage visualization interface with features for port management and one-click full-site server startup.",
+            "Improved website loading speed by 30% through code optimization.",
+            "Conducted hardware validation tests for Intel EVO Certification laptops."
           ]
         },
         {
@@ -65,14 +64,13 @@ const contentData = {
           position: "軟體工程師",
           company: "仁寶電腦工業股份有限公司",
           responsibilities: [
-            "開發自動化網頁資料抓取工具，整合圖表並生成報表，自動寄送定期統整信件",
-            "建置 Mail Agent 系統，使 AI 能夠自動產生信件內容並完成寄送流程",
+            "負責RAG系統建置，研究適合的Embedding模型，並使用RAGFlow框架在兩個月內快速佈署RAG架構，並打包docker image",
+            "開發AI Agent專案，參與AI Agent框架(Autogen)的建設，以及部分Agent(Mail Agent, Remote Tool Agent, RAG Agent)的開發",
+            "開發4款給功能團隊使用的網頁系統，其中包含兩款AI聊天專案和兩款資料管理類型專案。",
+            "維護3款網頁專案，進行框架升級(Vue2 -> Vue3)，並重構優化部分程式",
             "打造 Port 使用狀況可視化介面，並提供 Port 管理與一鍵啟動全站伺服器等功能",
-            "使用 Vue.js 開發互動式前端網站",
-            "以 Python Django 開發後端 API，並串接 MySQL 資料庫",
-            "跨部門合作建置公司內部 IT 系統",
-            "開發提升筆電測試效率的內部工具",
             "透過程式碼優化，提升網站載入速度達 30%",
+            "筆電 Intel EVO Certification 硬體測試",
           ]
         },
         {
@@ -99,14 +97,13 @@ const contentData = {
           position: "ソフトウェアエンジニア",
           company: "コンパル電子株式会社",
           responsibilities: [
-            "Webデータの自動収集・分析基盤を構築し、チャート化したレポートを自動生成・定期メールで配信",
-            "AIが自動でメール文面を生成し送信できるMail Agentシステムを構築",
-            "Port の使用状況を可視化するダッシュボードを構築し、Port 管理機能や Web システム全体をワンクリックで起動できる機能を実装",
-            "Vue.jsを用いたインタラクティブなフロントエンドアプリを開発",
-            "Python DjangoでバックエンドAPIを構築し、MySQLと連携",
-            "部署横断のチームと協力し、社内ITシステムを構築",
-            "ノートパソコンのテスト効率を向上させる社内ツールを開発",
-            "コード最適化により、Webサイトの読み込み速度を30％向上",            
+            "RAGシステムの構築を担当し、適切なEmbeddingモデルの選定・検証を行い、RAGFlowフレームワークを用いて2ヶ月以内にRAGアーキテクチャを迅速に構築し、Dockerイメージとしてパッケージ化しました。",
+            "AIエージェントプロジェクトを開発し、AIエージェントフレームワーク（AutoGen）の構築に参画するとともに、複数のエージェント（Mail Agent、Remote Tool Agent、RAG Agent）の開発を担当しました。",
+            "社内チーム向けに4つのWebシステムを開発し、そのうち2つはAIチャットシステム、2つはデータ管理システムです。",
+            "3つのWebアプリケーションの保守を担当し、フレームワークのアップグレード（Vue2 → Vue3）およびコードのリファクタリング・最適化を実施しました。",
+            "Port使用状況の可視化インターフェースを構築し、Port管理およびワンクリックでのサーバー起動機能を実装しました。",
+            "コード最適化により、Webサイトの読み込み速度を30％向上させました。",
+            "Intel EVO認証に関わるノートPCのハードウェア検証テストを実施しました。"
           ]
         },
         {
